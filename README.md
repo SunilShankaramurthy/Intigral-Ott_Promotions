@@ -1,31 +1,31 @@
 # Intigral-Ott_Promotions
 
 #Table of Content
-1. API Description
-2. Framework Architecture
-3. Framework - PreRequisite
-4. Run Command
-5. Conclusion
+- [Description](#description)
+- [Architecture](#architecture)
+- [PreRequisite](#prerequisite)
+- [Run-Command](#run-command)
+- [Conclusion](#conclusion)
 
-# API Description
+## Description
    This project contains Inteigral-ott.net popcorn API verification and validation TestCases.
-#Framework Architecture
-  This is a Maven project develped using Java RestAssured and TestNG.
-    - Maven take cares of dependency jars and plugins.
-    - Allows easy acessing methods to validate JSON Response 
-    - Provides parallel run option 
-    - Provides access to produce user defined Test Reports.
-    - Update assertion values from properties files thus redusing change rquired to alter the code.
+## Architecture
+  This is a Maven project developed using Java RestAssured and TestNG.<br/>
+    - Maven take cares of dependency jars and plugins.<br/>
+    - Allows easy acessing methods to validate JSON Response.<br/> 
+    - Provides parallel run option.<br/>
+    - Provides access to produce user defined Test Reports.<br/>
+    - Update assertion values from properties files thus redusing change rquired to alter the code.<br/>
     
   
-#Framework - PreRequisite
+## PreRequisite
   Java 8
-#Run Command
+## Run-Command
   1. To run the Test on Non-Prod
-      mvn clean install nonProd
+      mvn clean install -Denv=nonProd -Dsuite=PopcornAPI -DthreadCount=4
   2.  To run the test on Pre-Prod
-      mvn clean install PreProd
+      mvn clean install -Denv=PreProd -Dsuite=PopcornAPI -DthreadCount=4
       
- #Conclusion
+ ## Conclusion
      This is a complete framework bult to add and test API's..
       
